@@ -14,3 +14,11 @@ after_success:
   - docker build -t mandarteli/multi-nginx ./nginx
   - docker build -t mandarteli/multi-server ./server
   - docker build -t mandarteli/multi-worker ./worker
+
+  #Log in docker cli 
+  - echo "$DOCKER_PASS" | docker login -u "$DOCKER_ID" --password-stdin
+  # pusshing images to docker
+  - docker push mandartelitech/multi-client
+  - docker push mandartelitech/multi-nginx
+  - docker push mandartelitech/multi-server
+  - docker push mandartelitech/multi-worker
