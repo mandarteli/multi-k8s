@@ -10,10 +10,10 @@ script:
   - docker run -e CI=true mandarteli/complex-test npm test
 
 after_success:
-  - docker build -t mandarteli/multi-client ./client
-  - docker build -t mandarteli/multi-nginx ./nginx
-  - docker build -t mandarteli/multi-server ./server
-  - docker build -t mandarteli/multi-worker ./worker
+  - docker build -t mandartelitech/multi-client ./client
+  - docker build -t mandartelitech/multi-nginx ./nginx
+  - docker build -t mandartelitech/multi-server ./server
+  - docker build -t mandartelitech/multi-worker ./worker
 
   #Log in docker cli 
   - echo "$DOCKER_PASS" | docker login -u "$DOCKER_ID" --password-stdin
