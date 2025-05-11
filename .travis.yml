@@ -26,11 +26,11 @@ after_success:
   #adding aws calls 
 deploy:
   provider: elasticbeanstalk
-  region: us-east-1
-  app: multi-docker
-  env: Multi-docker-env
-  bucket_name: elasticbeanstalk-us-east-1-441778933962
-  bucket_path: multi-docker
+  region: 'us-east-1'
+  app: 'multi-docker'
+  env: 'Multi-docker-env'
+  bucket_name: 'elasticbeanstalk-us-east-1-441778933962'
+  bucket_path: 'multi-docker'
   on:
     branch: main
   access_key_id: $AWS_ACCESS_KEY
