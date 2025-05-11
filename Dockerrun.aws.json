@@ -1,5 +1,5 @@
 {
-    "AWSEBSDockerrunVersion": 2,
+    "AWSEBSDockerrunVersion": 3,
     "containerDefinitions": [
         {
             "name": "client",
