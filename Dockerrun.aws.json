@@ -21,12 +21,12 @@
             "image": "mandartelitech/multi-server",
             "hostname": "api",
             "essential": false,
-            "memory": 128
+            "memory": 130
 
         },
         {
-            "name": "ngnix",
-            "image": "mandartelitech/multi-ngnix",
+            "name": "nginx",
+            "image": "mandartelitech/multi-nginx",
             "hostname": "nginx",
             "essential": true,
             "memory": 128,
