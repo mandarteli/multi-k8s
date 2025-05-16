@@ -24,16 +24,16 @@ after_success:
   - docker push mandartelitech/multi-worker
 
   #adding aws calls 
-deploy:
-  provider: elasticbeanstalk
-  region: "us-east-1"
-  app: "multi-container"
-  env: "Multi-container-env"
-  bucket_name: "elasticbeanstalk-us-east-1-441778933962"
-  bucket_path: "multi-container"
-  access_key_id: $AWS_ACCESS_KEY
-  secret_access_key: $AWS_SECRET_KEY
-  on:
-    branch: main
-  debug: true
+#deploy:
+ # provider: elasticbeanstalk
+  #region: "us-east-1"
+  #app: "multi-container"
+  #env: "Multi-container-env"
+  #bucket_name: "elasticbeanstalk-us-east-1-441778933962"
+  #bucket_path: "multi-container"
+  #access_key_id: $AWS_ACCESS_KEY
+  #secret_access_key: $AWS_SECRET_KEY
+  #on:
+   # branch: main
+ # debug: true
 

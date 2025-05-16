@@ -27,7 +27,6 @@
         {
             "name": "nginx",
             "image": "mandartelitech/multi-nginx",
-            "hostname": "nginx",
             "essential": true,
             "memory": 128,
             "portMappings": [
