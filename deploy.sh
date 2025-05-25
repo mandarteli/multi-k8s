@@ -12,6 +12,7 @@ docker push mandartelitech/multi-server:$SHA
 docker push mandartelitech/multi-worker:$SHA
 
 echo "current dir $(pwd)"
+ls -ltr
 
 kubectl apply -f /k8s
 
