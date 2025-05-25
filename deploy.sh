@@ -13,8 +13,8 @@ docker push mandartelitech/multi-worker:$SHA
 
 echo "current dir $(pwd)"
 ls -ltr
-
-kubectl apply -f /k8s
+ls -ltr k8s
+kubectl apply -f k8s
 
 kubectl set image deployments/server-deployment server=mandartelitech/multi-server:$SHA
 kubectl set image deployments/client-deployment client=mandartelitech/multi-client:$SHA
