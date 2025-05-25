@@ -11,6 +11,8 @@ docker push mandartelitech/multi-client:$SHA
 docker push mandartelitech/multi-server:$SHA
 docker push mandartelitech/multi-worker:$SHA
 
+echo "current dir $(pwd)"
+
 kubectl apply -f /k8s
 
 kubectl set image deployments/server-deployment server=mandartelitech/multi-server:$SHA
